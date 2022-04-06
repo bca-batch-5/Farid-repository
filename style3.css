@@ -8,8 +8,13 @@ header {
     height: 100vh;
     width: 100vw;
 }
-
+section#tengah {
+    background-color: lightgray;
+    height: 100vh;
+    width: 100vw;
+}
 nav ul {
+    position: fixed;
     float: right;
     list-style-type: none;
     margin: 16px;
@@ -36,11 +41,11 @@ li a:hover {
     position: absolute;
     top: 50%;
     left : 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-40%,-40%);
 }
 
 .title h1{
-    font-size:70px;
+    font-size:50px;
 }
 
 #learn {

@@ -1,0 +1,65 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  main.main-wrapper {
+    height: 100vh;
+    background-color: rgb(102, 220, 137);
+
+  } 
+  
+  .card {
+    font-size: 20px;
+    padding: 10px;
+    background-color: lightcyan;
+    border: 1px solid lightgray;
+    min-width: 50%;
+  }
+  
+  .div-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: fit-content;
+    border: 1px solid black;
+  }
+  
+  .center {
+    justify-content: center;
+  }
+  
+  .around {
+    justify-content: space-around;
+  }
+  
+  .between {
+    justify-content: space-between;
+  }
+  
+  .align-center {
+
+    align-items: center;
+  }
+  
+  .one {
+    flex: 1;
+  }
+  
+  .two {
+    flex: 2;
+  }
+  
+  .three {
+    flex: 3;
+  }
+  
+  .new-card {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .image {
+    margin-right: 10px;
+  }

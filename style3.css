@@ -8,31 +8,14 @@ header {
     width: 100vw;
     background-image: url(https://images.unsplash.com/photo-1638061386183-7763b9b2b351?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
 }
-section#tengah {
+section {
     height: 100vh;
     width: 100vw;
+    transition: all 5s ease;
 }
 nav {
     position:fixed;
-    background-color: solid black;
     margin: 0px;
-}
-
-nav ul li {
-    display : inline;
-}
-
-li a{
-    text-decoration: none;
-    color: dark green;
-    padding: 5px;
-    border: 1px solid lightgreen;
-    border-radius: 8px;
-}
-
-li a:hover {
-    color: darkblue;
-    background-color: lightgreen;
 }
 
 .title {
@@ -55,13 +38,15 @@ li a:hover {
     border-radius: 8px;
     padding: 10px 30px;
     color: brown;
-    transition: 0.6s ease;
+    transition: 3s ease;
+    transition: all 0.5s;
 }
 
 button#learn:hover {
     background-color: lightcoral;
     color: white;
     cursor: pointer;
+
 }
 
 div#divats{
@@ -79,6 +64,34 @@ img#fotoprofil{
 
 .left-wrapper{
     text-align: center;
-
+    background-color: lightskyblue;
+    background: opacity 10%;
+    border-right: 5px solid black;
+    border-right-style: dashed;
+    padding: 5px;
+}
+.right-wrapper{
+    align-items: center;
+    border-left: 5px solid black;
+    border-left-style:dashed ;
 }
 
+td{
+    width: 300px;
+}
+
+.class {
+    scroll-behavior: smooth;
+}
+
+.card{
+    margin: 50px;
+}
+footer{
+    height: 20vh;
+    
+}
+.card-img-top{
+    height: 200px;
+    width: 100px;
+}

@@ -28,6 +28,8 @@ header {
     height: 100vh;
     width: 100vw;
     background-image: url(https://images.unsplash.com/photo-1638061386183-7763b9b2b351?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 section {
@@ -36,45 +38,17 @@ section {
     transition: all 5s ease;
 }
 
-nav {
-    
-    margin: 0px;
-}
-
 div a:hover {
     background-color: darkgrey;
     transition: 0.75s ease;
     border-radius: 10%;
 }
 
-.title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-40%, -40%);
-}
 
 .title h1 {
     font-size: 50px;
 }
 
-#learn {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 1px solid white;
-    border-radius: 8px;
-    padding: 10px 30px;
-    color: brown;
-}
-
-button#learn:hover {
-    background-color: lightcoral;
-    color: white;
-    cursor: pointer;
-
-}
 
 div#divats {
     position: absolute;
@@ -104,11 +78,6 @@ img#fotoprofil {
     border-left-style: dashed;
 }
 
-.scrollsec {
-    transform: translateY(100%);
-    margin-top: 10px;
-    transition: all 1000ms ease-in 1000ms;
-}
 
 td {
     width: 300px;
@@ -136,6 +105,8 @@ footer {
     margin: 0px;
     Padding: 0px;
     background-image: url(https://images.unsplash.com/photo-1641428744718-7669981e02f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #bawah {
@@ -143,6 +114,6 @@ footer {
     padding-left: 10px;
 }
 
-.card{
+.card {
     opacity: 90%;
 }

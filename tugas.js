@@ -45,14 +45,56 @@ do{
 }
 while(i<=15)
 
-function parameterJarak{
+
+
+function parameterJarak(jarak){
     var biaya = 0;
+    var jarak =4;
     if(jarak <= 2){
         biaya = 5000
     }
     else {
         biaya = 5000 + (jarak - 2) * 3000
     }
+    console.log(biaya)   
 }
 
 
+function triangle(n){
+    let string = "";
+    for (let i = n; i >= 0; i--) {
+        for (let j = i; j > 0; j--) {
+            string += "*";
+        }
+        string += "\n";
+        }
+    console.log(string);
+}
+
+triangle(5)
+
+
+function square(n){
+    let string = "";
+    for(let i = 0; i < n; i++) { // external loop
+        for(let j = 0; j < n; j++) { // internal loop
+            if(i === 0 || i === n - 1) {
+            string += "*";
+            }
+            else {
+            if(j === 0 || j === n - 1) {
+                string += "*";
+            }
+            else {
+                string += " ";
+            }
+            }
+        }
+        // newline after each row
+        string += "\n";
+    }
+        // printing the string
+        console.log(string);
+}
+
+square(10)

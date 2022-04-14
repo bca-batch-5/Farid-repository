@@ -1,14 +1,22 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 body{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif !important;
 }
 ul#ululu{
   list-style: none;
   padding: 0px;
   display: flex;
+  margin-top: 20px;
+margin-left: 44px;
+}
+.navbar-custom{
+  display: flex;
+  align-content: space-between;
 }
 .navbar-toggler-icon{
   height: 20px !important;
@@ -18,8 +26,59 @@ ul#ululu{
   height: 80px;
   margin-top: 22px;
 }
+.drop-custom{
+font-size: 17px;
+line-height: 22px;
+color: #424242 !important;
+padding-left: 0px !important;
+padding-right: 20px !important
+
+;
+
+}
+.logo-home{
+  height: 50px;
+  width: 50px;
+}
+.logo-bar{
+   display: flex;
+  align-content: space-between; */
+}
+.search-custom{
+  height: 43px !important;
+  font-size: 17px !important;
+  line-height: 22px;
+  background-color: white;
+  border-top-right-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+}
+.search-logo-custom{
+  height: 43px !important;
+  font-size: 17px !important;
+  line-height: 22px;
+  background-color: white;
+  border: 1px;
+  border-radius: 20px !important;
+}
 aside{
   background-color: white;
+  
+}
+.shadow-custom{
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.25);
+}
+.menu-profil{
+  margin-left: 27%;
+  margin-right: 10%;
+}
+.foto-profil{
+  height: 150px;
+  width: 150px;
+}
+.username-login{
+  font-weight: bold;
+  font-size: 25px;
+  margin-top: 16px;
 }
 .togler-custom{
   margin-left: 75% !important;
@@ -30,113 +89,106 @@ aside{
   font-size: 17px !important;
 
 }
-.container {
-  margin: 0 auto;
-  width: 250px;
-  height: 200px;
-  position: relative;
-  perspective: 1000px;
-}
-.main-wrapper{
-  display: flex; 
-  height: 125vh;
-}
-.left-wrapper{
-  background : url(../assets/bglogin.png), rgba(0, 0, 0, 0.3);
-  background-size: cover;
-  /* background-position: bottom; */
-}
-.left-title{
-  margin-top:9%;
-  margin-left: 4%;
-  font-size: 64px;
-  color: white;
- 
-  font-weight: 700;
-  line-height: 83px ;
 
+ul.list-side{
+  margin-top: 3rem;
 }
-
-.logo{
-  float: right;
-  margin-top: 12px;
-  margin-right: 15px;
-  height: 100px;
-  width: 100px;
+.list-side li{
+  list-style: none ;
+  font-weight: 600;
+  line-height: 34px;
+  width: 244px;
+  height: 56px;
+margin-left: 0px;
+margin-top: 10px;
 }
-
-.form-wrap{
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 35%;
-  color: #424242;
-
-}
-
-.regis-title{
-  font-size: 64px;
-  line-height: 83px;
-}
-
-.regis-desc{
-  font-size: 17px; 
-  line-height: 22px;
-  margin-top: 10px;
-}
-.btn-sign-up{
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 10px 25px;
-  background-color: black;
+.list-side li a{
+  font-size:25px ;
+  color: black;
+  font-style: normal;
   text-decoration: none;
-  color:  #D0CCCC;
-  font-size: 17px;
-  line-height: 22px;
-  font-weight: bold;
+}
 
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.gallery {
+  background: #EEE;
+}
+.carousel-custom{
+  height: 300px;
+  margin-top: 36px;
+}
+
+.gallery-cell {
+  width: 600px;
+  height: 300px;
+  margin-right: 68px;
+  
+  counter-increment: gallery-cell;
+}
+.gambar-cell-1{
+  background: url(../assets/d96eff85-ae75-4f56-bdfc-dd7a055e7400.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gambar-cell-2{
+  background: url(../assets/laskar.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gambar-cell-3{
+  background: url(../assets/3992f708-3a68-412d-b583-e19d6a02df80.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.gambar-cell-4{
+  background: url(../assets/977994_346fec47-0d83-4c64-ac50-b3e121e797d0_700_700.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.gambar-cell-5{
+  background: url(../assets/covernya.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+.book-container{
+  margin-top: 79px;
+  margin-left: 40px;
+}
+
+.list-book-title{
+ font-size: 25px;
+ line-height: 32px;
+ color: black    ;
+}
+
+.card{
+  width: 320px;
+  height: 340px;
   
 }
-.btn-wrap{
-  margin-top: 53px;
+.card-text{
+  font-size: 15px;
 }
-.btn-sign-up:hover {
-  color: white !important;
-
-}
-
-.btn-log-in{
-  color:#D0CCCC  ;
-background-color: white;
-border: 1px solid #D0CCCC;
-border-radius: 5px;
-  padding: 10px 25px;
-  text-decoration: none;
-  font-size: 17px;
-  line-height: 22px;
-  font-weight: bold;
+.card-list-book{
+  display: flex ;
+  justify-content: space-between;
 }
 
-.btn-log-in:hover {
-  color: #D0CCCC!important;
-
-}
-.term-desc{
-  margin-top: 12%;
-  margin-bottom: 5%;
-  font-weight: bold;
-  color: #D0CCCC;
-  font-style: normal;
-  font-size: 17px;
-  line-height: 22px;
-}
-
-.term-color{
-  color: black;
-  text-decoration: none;
-
-}
-
-.term-color:hover{
-  color: #D0CCCC !important;
-
+.hide{
+  display:none;
 }

@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Open Sans', sans-serif !important;
+}
+.container {
+    margin: 0 auto;
+    width: 250px;
+    height: 200px;
+    position: relative;
+    perspective: 1000px;
+  }
+  .main-wrapper{
+    display: flex; 
+    height: 125vh;
+  }
+  .left-wrapper{
+    background : url(../assets/bglogin.png), rgba(0, 0, 0, 0.3);
+    background-size: cover;
+    /* background-position: bottom; */
+  }
+  .left-title{
+    margin-top:9%;
+    margin-left: 4%;
+    font-size: 64px;
+    color: white;
+   
+    font-weight: 700;
+    line-height: 83px ;
+  
+  }
+  
+  .logo{
+    float: right;
+    margin-top: 12px;
+    margin-right: 15px;
+    height: 100px;
+    width: 100px;
+  }
+  
+  .form-wrap{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 35%;
+    color: #424242;
+  
+  }
+  
+  .regis-title{
+    font-size: 64px;
+    line-height: 83px;
+  }
+  
+  .regis-desc{
+    font-size: 17px; 
+    line-height: 22px;
+    margin-top: 10px;
+  }
+  .btn-sign-up{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px 25px;
+    background-color: black;
+    text-decoration: none;
+    color:  #D0CCCC;
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: bold;
+  
+    
+  }
+  .btn-wrap{
+    margin-top: 53px;
+  }
+  .btn-sign-up:hover {
+    color: white !important;
+  
+  }
+  
+  .btn-log-in{
+    color:#D0CCCC  ;
+  background-color: white;
+  border: 1px solid #D0CCCC;
+  border-radius: 5px;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: bold;
+  }
+  
+  .btn-log-in:hover {
+    color: #D0CCCC!important;
+  
+  }
+  .term-desc{
+    margin-top: 12%;
+    margin-bottom: 5%;
+    font-weight: bold;
+    color: #D0CCCC;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 22px;
+  }
+  
+  .term-color{
+    color: black;
+    text-decoration: none;
+  
+  }
+  
+  .term-color:hover{
+    color: #D0CCCC !important;
+}
+  

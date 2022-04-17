@@ -1,0 +1,95 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 25px;
+}
+.umum{
+    display: flex;
+}
+.background-detail{
+   background-image: url(../assets/covernyadetail.svg);
+    background-repeat: no-repeat;
+    background-size:cover;
+
+    height: 50vh;
+    width: 100%;
+}
+nav{
+    height: 50px;
+    width: 100%;
+    position: fixed;
+}
+main{
+    height: 100vh;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+aside{
+height:100vh;
+width: 35%;
+
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.cover-buku{
+    height: 288px;
+    width: 200px;
+    margin-top: 253px;
+    margin-left: 255px;
+}
+.konten{
+    margin-top: 400px;
+    margin-left: 104px;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+.kategori{
+    padding: 5px 25px;
+    max-width: fit-content;
+    border-radius: 15px;
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+}
+.status{
+    font-size: 30px;
+    color: #99D815;
+}
+.diskripsi{
+    font-size: 20px;
+    line-height: 26px;
+}
+.btn-borrow{
+    font-size: 30px !important;
+    line-height: 39px !important;
+    color: white !important;
+    margin-left: 280px;
+    margin-top: 200px;
+    margin-bottom: 20px;
+}
+
+
+svg:hover{
+    color: blue;
+}
+.back{
+    margin: 20px;
+}
+.nav-detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.edit-delete{
+    margin-right: 20px;
+}

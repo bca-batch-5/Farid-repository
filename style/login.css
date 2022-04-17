@@ -19,7 +19,8 @@ body{
     height: 125vh;
   }
   .left-wrapper{
-    background : url(../assets/bglogin.png), rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);
+    background: url(../assets/bglogin.png), rgba(0, 0, 0, 0.3);
     background-size: cover;
     /* background-position: bottom; */
   }

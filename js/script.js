@@ -1,13 +1,13 @@
 var sidebar = document.getElementById ("aside")
 var main = document.getElementById("main")
 var btnaside = document.getElementById("btn-aside")
-var btnnavbar = document.getElementById("btn-navbar")
+var btnnavbar = document.getElementsById("#btn-navbar")
 
 
 function openASidebar() {
   sidebar.classList.add("active")
   main.classList.add("inactive")
-  btnnavbar.classList.add("hide")
+  btnnavbar.classList.add("inactive")
 }
 function closeSidebar(){
   sidebar.classList.remove("active")

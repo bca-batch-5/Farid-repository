@@ -25,25 +25,29 @@
 
 <body>
   <div class="modal fade" id="addDataModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
+    <div class="modal-dialog ">
+      <div class="modal-content dialog-custom">
         <div class="modal-header">
           <h5 class="modal-title" id="addDataLabel">Add Data</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        <div class="modal-body flex column">
+          <div class="mb-3 ">
+            <label for="exampleFormControlInput1" class="form-label">URL Image</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="URL Image..">
           </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+          <div class="mb-3 ">
+            <label for="exampleFormControlInput2" class="form-label">Title</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Title..">
+          </div>
+          <div class="mb-3 ">
+            <label for="exampleFormControlTextarea1" class="form-label">Description</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <button type="button" class="btn btn-warning" style="color:white">Save</button>
         </div>
       </div>
     </div>
@@ -57,7 +61,7 @@
       </div>
       <div class="side-menu">
         <div class="menu-profil">
-          <img style="foto-profil" src="../assets/fp_1.svg" alt="" />
+          <img class="foto-profil" src="../assets/fp_1.svg" alt="" />
           <p class="username-login">Niki Zafanya</p>
         </div>
         <div>
@@ -71,7 +75,7 @@
             <li>
               <button class="btn-adddata" data-bs-toggle="modal" data-bs-target="#addDataModal">
 
-                <p>Add Data</p>
+               Add Data
               </button>
             </li>
           </ul>
@@ -83,13 +87,13 @@
       <div class="flex-container" style="width: 100%">
         <header>
           <nav class="navbar-light bg-light" style="display: flex; justify-content: space-between">
-            <button onclick="openASidebar()" class="navbar-toggler togler2-custom" type="button">
-              <span class="navbar-toggler-icon" id="btn-navbar"></span>
+            <button id="btn-navbar" onclick="openASidebar()" class="navbar-toggler togler2-custom" type="button">
+              <span class="navbar-toggler-icon" ></span>
             </button>
             <ul id="ululu">
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle drop-custom" href="#" id="navbarDropdown" role="button"
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left: 20px">
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left: 5%">
                   All Categories
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -122,16 +126,13 @@
             </ul>
             <form class="form-inline my-2 my-lg-0" id="formsearch">
               <div class="input-group search-custom">
-                <div class="input-group-prepend search-logo-custom">
-                  <span class="input-group-text"><i class="fa fa-search"></i></span>
-                </div>
                 <input class="form-control mr-sm-2 search-custom" type="search" placeholder="Search book"
                   aria-label="Search" />
               </div>
             </form>
             <div class="logo-bar">
               <img class="logo-home" src="../assets/bookshelf.svg" alt="" />
-              <h4>Library</h4>
+              <h4 class="logo-title" style="width:15vw">Library</h4>
             </div>
           </nav>
         </header>
@@ -145,25 +146,35 @@
 
             <!-- Flickity HTML init -->
             <div class="gallery js-flickity carousel-custom" data-flickity-options='{ "wrapAround": true }'>
-              <div class="gallery-cell gambar-cell-1">
-                <div class="card-body">
-                  <h5 class="card-title" style="color: white">
-                    Ubur-ubur Lembur
-                  </h5>
-                  <p class="card-text" style="color: white">Raditya Dika</p>
-                </div>
-              </div>
-              <div class="gallery-cell gambar-cell-2"></div>
-              <div class="gallery-cell gambar-cell-3"></div>
-              <div class="gallery-cell gambar-cell-4"></div>
-              <div class="gallery-cell gambar-cell-5"></div>
+              <a href="">
+                <div class="gallery-cell gambar-cell-1">
+                  <div class="card-body">
+                    <h5 class="card-title" style="color: white; margin-left: 10px;">
+                      Ubur-ubur Lembur
+                    </h5>
+                    <p class="card-text" style="color: white; margin-left: 10px; margin-top: 0px;">Raditya Dika</p>
+                  </div>
+              </a>
             </div>
+            <a href="">
+              <div class="gallery-cell gambar-cell-2"></div>
+            </a>
+
+            <a href="">
+              <div class="gallery-cell gambar-cell-3"></div>
+            </a><a href="">
+              <div class="gallery-cell gambar-cell-4"></div>
+            </a><a href="">
+              <div class="gallery-cell gambar-cell-5"></div>
+            </a>
           </div>
-        </section>
-        <section>
-          <div class="book-container">
-            <p class="list-book-title">List Book</p>
-            <div class="card-list-book">
+      </div>
+      </section>
+      <section>
+        <div class="book-container">
+          <p class="list-book-title">List Book</p>
+          <div class="card-list-book">
+            <a href="../src/detail.html">
               <div class="card card-custom">
                 <img src="../assets/covernya.svg" class="card-img-top" alt="..." />
                 <div class="card-body">
@@ -175,7 +186,9 @@
                   </p>
                 </div>
               </div>
-              <div class="card">
+            </a>
+            <a href="">
+              <div class="card card-custom">
                 <img src="../assets/977994_346fec47-0d83-4c64-ac50-b3e121e797d0_700_700.svg" class="card-img-top"
                   alt="..." />
                 <div class="card-body">
@@ -187,8 +200,11 @@
                   </p>
                 </div>
               </div>
-              <div class="card">
-                <img src="../assets/3992f708-3a68-412d-b583-e19d6a02df80.svg" class="card-img-top" alt="..." />
+            </a>
+            <a href="">
+              <div class="card card-custom">
+                <img src="../assets/3992f708-3a68-412d-b583-e19d6a02df80.svg" class="card-img-top"
+                  alt="..." />
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">
@@ -198,11 +214,13 @@
                   </p>
                 </div>
               </div>
+            </a>
             </div>
           </div>
-        </section>
-      </div>
-    </main>
+        </div>
+      </section>
+  </div>
+  </main>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"

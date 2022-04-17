@@ -93,3 +93,29 @@ svg:hover{
 .edit-delete{
     margin-right: 20px;
 }
+
+.btn-custom{
+    border: 0px solid white!important;
+    background: none;
+    font-weight: bold;
+  }
+  .dialog-custom{
+
+    width: 950px !important;
+    height: 800px !important;
+  }
+
+.flex{
+    display: flex;
+}
+.icon-check{
+    max-width: 150px;
+    max-height: 150px;
+
+}
+.align-center{
+    align-items: center;
+}
+.column{
+    flex-direction: column;
+}

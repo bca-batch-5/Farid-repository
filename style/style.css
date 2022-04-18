@@ -168,7 +168,7 @@ ul#ululu {
   margin-right: 10%;
   align-items: center;
 }
-.card-body{
+.title-card{
   background: rgba(0, 0, 0, 0.2);
 }
 .search-custom {
@@ -205,8 +205,8 @@ main {
   transition: 0.5s ease-in-out;
 }
 main.inactive {
-  transform: translateX(30%);
-  width: 76%;
+  transform: translateX(24%);
+  /* width: 76%; */
   transition: 0.5s ease-in-out;
 }
 
@@ -374,7 +374,7 @@ ul.list-side {
 }
 
 .dialog-custom {
-  width: 950px !important;
+  width: 750px !important;
   height: 800px !important;
 }
 

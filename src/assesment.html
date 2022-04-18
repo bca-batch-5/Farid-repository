@@ -29,7 +29,7 @@
       <div class="modal-content dialog-custom">
         <div class="modal-header">
           <h5 class="modal-title" id="addDataLabel">Add Data</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
         </div>
         <div class="modal-body flex column">
           <div class="mb-3 ">
@@ -56,7 +56,12 @@
     <aside class="shadow-custom" id="aside">
       <div class="navbar-light bg-light nav-custom">
         <button onclick="closeSidebar()" class="navbar-toggler togler-custom" type="button" id="btn-aside">
-          <span class="navbar-toggler-icon"></span>
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <i class="bi bi-x-square"></i>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-square" viewBox="0 0 16 16">
+            <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+          </svg>
         </button>
       </div>
       <div class="side-menu">
@@ -148,7 +153,7 @@
             <div class="gallery js-flickity carousel-custom" data-flickity-options='{ "wrapAround": true }'>
               <a href="">
                 <div class="gallery-cell gambar-cell-1">
-                  <div class="card-body">
+                  <div class="card-body title-card">
                     <h5 class="card-title" style="color: white; margin-left: 10px;">
                       Ubur-ubur Lembur
                     </h5>
@@ -157,15 +162,30 @@
               </a>
             </div>
             <a href="">
-              <div class="gallery-cell gambar-cell-2"></div>
+              <div class="gallery-cell gambar-cell-2">
+                <div class="card-body title-card">
+                  <h5 class="card-title" style="color: white; margin-left: 10px;">
+                    Laskar Pelangi
+                  </h5>
+                  <p class="card-text" style="color: white; margin-left: 10px; margin-top: 0px;">Andrea Hirata</p>
+                </div>
+              </div>
+              
             </a>
 
             <a href="">
               <div class="gallery-cell gambar-cell-3"></div>
             </a><a href="">
               <div class="gallery-cell gambar-cell-4"></div>
-            </a><a href="">
-              <div class="gallery-cell gambar-cell-5"></div>
+            </a><a href="../src/detail.html">
+              <div class="gallery-cell gambar-cell-5">
+                <div class="card-body title-card">
+                  <h5 class="card-title" style="color: white; margin-left: 10px;">
+                    Dilan 1990
+                  </h5>
+                  <p class="card-text" style="color: white; margin-left: 10px; margin-top: 0px;">Pidi Baiq</p>
+                </div>
+              </div>
             </a>
           </div>
       </div>
@@ -178,7 +198,7 @@
               <div class="card card-custom">
                 <img src="../assets/covernya.svg" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">DILAN 1990</h5>
                   <p class="card-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Sed convallis lacus mi, sit amet vehicula nisl consequat
@@ -192,7 +212,7 @@
                 <img src="../assets/977994_346fec47-0d83-4c64-ac50-b3e121e797d0_700_700.svg" class="card-img-top"
                   alt="..." />
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">Sebuah Seni Untuk..</h5>
                   <p class="card-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Sed convallis lacus mi, sit amet vehicula nisl consequat
@@ -206,7 +226,7 @@
                 <img src="../assets/3992f708-3a68-412d-b583-e19d6a02df80.svg" class="card-img-top"
                   alt="..." />
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">React Native</h5>
                   <p class="card-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Sed convallis lacus mi, sit amet vehicula nisl consequat
